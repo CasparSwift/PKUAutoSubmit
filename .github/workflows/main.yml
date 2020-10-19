@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '15 1 * * *'
+    - cron: '25 23 * * *'
     - cron: '45 8 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -32,4 +32,4 @@ jobs:
       
       - run: |
           pip install selenium
-          python main.py -u ${{ secrets.USERNAME }} -p ${{ secrets.PASSWORD }}
+          python main.py -u ${{ secrets.USERNAME }} -p ${{ secrets.PASSWORD }} --reason 实习 --track 东门-清华科技园-王选所
