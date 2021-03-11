@@ -32,4 +32,4 @@ jobs:
       
       - run: |
           pip install selenium
-          python main.py -u ${{ secrets.USERNAME }} -p ${{ secrets.PASSWORD }} --reason 实习 --track 东门-清华科技园-王选所
+          python main.py -u ${{ secrets.USERNAME }} -p ${{ secrets.PASSWORD }} --reason 科研实习 --track 东门-王选所-东门
