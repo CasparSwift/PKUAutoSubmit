@@ -12,8 +12,8 @@ import copy
 import sys
 import os
 
-TIMEOUT = 30
-TIMESLP = 3
+TIMEOUT = 15
+TIMESLP = 2
 
 
 def login(driver, username, password, failed=0):
